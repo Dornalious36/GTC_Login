@@ -81,7 +81,7 @@ class _MyappState extends State<Myapp> {
                 },
                 child: Text.rich(
                   TextSpan(
-                      text: "Don't have an account?",
+                      text: "Don't have an account? ",
                       children: [
                         TextSpan(
                           text: "Signup",
@@ -155,6 +155,26 @@ class _SecondState extends State<Second> {
                     ),
                   ),
                 ),
+                SizedBox(height: 20.0,),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "Telephone",
+                    suffixIcon: Icon(Icons.phone_iphone),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.0,),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "Business",
+                    suffixIcon: Icon(Icons.store),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                  ),
+                ),
                 SizedBox(height: 30.0,),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
@@ -178,7 +198,7 @@ class _SecondState extends State<Second> {
                   },
                   child: Text.rich(
                       TextSpan(
-                          text: "Already have an account?",
+                          text: "Already have an account? ",
                           children: [
                             TextSpan(
                                 text: "Signin",
@@ -189,7 +209,8 @@ class _SecondState extends State<Second> {
                           ]
                       )
                   ),
-                )
+                ),
+                SizedBox(height: 30.0,),
               ],
             ),
           ),
